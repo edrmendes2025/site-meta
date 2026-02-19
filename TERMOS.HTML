@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Privacidade | Sua Empresa</title>
+  <style>
+    body{margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial; background:#0b1220; color:#eaf0ff;}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 40px;}
+    a{color:#eaf0ff}
+    .card{background:#101a33; border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:18px; line-height:1.7}
+    h1{margin:0 0 10px}
+    h2{margin:18px 0 8px; font-size:18px}
+    p,li{color:#b8c3e6}
+    .top{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;}
+    .btn{padding:10px 12px; border:1px solid rgba(255,255,255,.12); border-radius:12px; text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <a class="btn" href="index.html">← Início</a>
+      <a class="btn" href="contato.html">Contato</a>
+      <a class="btn" href="termos.html">Termos</a>
+    </div>
+
+    <div class="card">
+      <h1>Política de Privacidade</h1>
+      <p><strong>Última atualização:</strong> <span id="d"></span></p>
+
+      <p>
+        Esta Política de Privacidade descreve como a <strong>Sua Empresa</strong> (“nós”) pode coletar e tratar dados pessoais
+        quando você acessa este site ou entra em contato conosco por canais digitais (ex.: e-mail, formulários, WhatsApp, plataformas).
+      </p>
+
+      <h2>1. Dados que podemos coletar</h2>
+      <ul>
+        <li>Dados de contato: nome, e-mail, telefone/WhatsApp, empresa.</li>
+        <li>Dados de comunicação: conteúdo de mensagens enviadas por você.</li>
+        <li>Dados técnicos básicos: endereço IP, data/hora de acesso, tipo de navegador (logs), quando aplicável.</li>
+      </ul>
+
+      <h2>2. Finalidades de uso</h2>
+      <ul>
+        <li>Atender solicitações, propostas, suporte e relacionamento comercial.</li>
+        <li>Executar serviços contratados e comunicação operacional.</li>
+        <li>Segurança, prevenção a fraudes e melhoria do atendimento.</li>
+      </ul>
+
+      <h2>3. Compartilhamento</h2>
+      <p>
+        Podemos utilizar provedores de e-mail, hospedagem e ferramentas de comunicação para viabilizar atendimento e operação.
+        Não vendemos dados pessoais. Compartilhamentos ocorrem apenas quando necessários para prestação de serviço, cumprimento legal
+        ou proteção de direitos.
+      </p>
+
+      <h2>4. Retenção</h2>
+      <p>
+        Mantemos dados pelo tempo necessário para cumprir as finalidades informadas, exigências legais e resolução de obrigações
+        contratuais e/ou disputas.
+      </p>
+
+      <h2>5. Direitos do titular</h2>
+      <p>
+        Você pode solicitar acesso, correção, atualização, exclusão e outras informações conforme a LGPD, quando aplicável.
+      </p>
+
+      <h2>6. Segurança</h2>
+      <p>
+        Aplicamos medidas razoáveis de segurança para proteger dados contra acesso não autorizado, alteração indevida e vazamentos,
+        considerando a natureza dos dados e a operação.
+      </p>
+
+      <h2>7. Contato</h2>
+      <p>
+        Para solicitações relacionadas à privacidade, entre em contato:
+        <br/>
+        <strong>E-mail:</strong> contato@suaempresa.com
+        <br/>
+        <strong>WhatsApp:</strong> (00) 00000-0000
+      </p>
+
+      <p style="margin-top:16px;color:#b8c3e6;">
+        Se você estiver utilizando serviços integrados (ex.: APIs, automações, plataformas de terceiros), o tratamento de dados pode depender
+        também das políticas desses provedores.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    document.getElementById("d").textContent = now.toLocaleDateString("pt-BR");
+  </script>
+</body>
+</html>

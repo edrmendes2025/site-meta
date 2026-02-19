@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EDRMENDES | Consultoria e Desenvolvimento de Sistemas</title>
+  <meta name="description" content="Consultoria e desenvolvimento de sistemas, integrações, automações e soluções sob medida." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#101a33; --text:#eaf0ff; --muted:#b8c3e6;
+      --accent:#2C7A7B; --gold:#CBA135; --line:rgba(255,255,255,.12);
+      --shadow: 0 12px 35px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1050px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background: radial-gradient(1200px 700px at 20% -10%, rgba(44,122,123,.35), transparent 60%),
+                      radial-gradient(900px 600px at 80% 0%, rgba(203,161,53,.25), transparent 55%),
+                      var(--bg); color:var(--text);}
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:26px 18px 40px;}
+    .top{display:flex; align-items:center; justify-content:space-between; gap:14px;}
+    .brand{display:flex; align-items:center; gap:12px;}
+    .logo{
+      width:42px; height:42px; border-radius:12px;
+      background: linear-gradient(145deg, var(--accent), rgba(44,122,123,.45));
+      box-shadow: var(--shadow);
+      display:grid; place-items:center; font-weight:800; color:#fff;
+    }
+    .brand h1{font-size:16px; margin:0; letter-spacing:.3px;}
+    .brand p{margin:2px 0 0; font-size:12px; color:var(--muted);}
+    nav{display:flex; gap:14px; flex-wrap:wrap;}
+    nav a{padding:10px 12px; border:1px solid var(--line); border-radius:12px; color:var(--muted);}
+    nav a:hover{border-color:rgba(44,122,123,.6); color:var(--text)}
+    .hero{margin-top:22px; padding:26px; border-radius:var(--radius); background:rgba(16,26,51,.72);
+      border:1px solid var(--line); box-shadow: var(--shadow);
+    }
+    .hero h2{margin:0 0 10px; font-size:28px; line-height:1.15}
+    .hero p{margin:0 0 16px; color:var(--muted); font-size:14px; line-height:1.7}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; align-items:center;}
+    .btn{
+      padding:12px 14px; border-radius:14px; border:1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.06); color:var(--text);
+      display:inline-flex; gap:10px; align-items:center;
+    }
+    .btn.primary{background: linear-gradient(145deg, var(--accent), rgba(44,122,123,.55)); border-color:rgba(44,122,123,.55)}
+    .btn.gold{background: linear-gradient(145deg, var(--gold), rgba(203,161,53,.55)); border-color:rgba(203,161,53,.55); color:#1a1a1a; font-weight:700}
+    .grid{display:grid; grid-template-columns: repeat(12, 1fr); gap:14px; margin-top:14px;}
+    .card{
+      grid-column: span 6;
+      padding:18px; border-radius:var(--radius); background:rgba(16,26,51,.65);
+      border:1px solid var(--line); box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    }
+    .card h3{margin:0 0 6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:13px; line-height:1.6}
+    .badge{display:inline-block; margin-top:10px; padding:8px 10px; border-radius:999px; font-size:12px;
+      border:1px solid rgba(44,122,123,.55); color:var(--muted);
+    }
+    .footer{
+      margin-top:18px; padding:16px; border-radius:var(--radius);
+      border:1px solid var(--line); background:rgba(16,26,51,.55);
+      color:var(--muted); font-size:12px; line-height:1.6;
+    }
+    .footer a{color:var(--text); text-decoration:underline}
+    @media (max-width:860px){
+      .card{grid-column: span 12;}
+      .hero h2{font-size:24px;}
+      nav{gap:10px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">SE</div>
+        <div>
+          <h1>SUA EMPRESA</h1>
+          <p>Consultoria e Desenvolvimento de Sistemas</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="contato.html">Contato</a>
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Soluções digitais sob medida para empresas</h2>
+      <p>
+        Atuamos com consultoria, desenvolvimento de sistemas, integrações e automações.
+        Esta página existe para apresentar a empresa e suas políticas, atendendo requisitos de plataformas como a Meta.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="contato.html">📩 Falar com a empresa</a>
+        <a class="btn" href="privacidade.html">🔒 Política de Privacidade</a>
+        <a class="btn gold" href="termos.html">📄 Termos de Uso</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Serviços</h3>
+        <p>
+          • Desenvolvimento Web e APIs<br/>
+          • Integrações (ERP, CRM, Webhooks, Automação)<br/>
+          • Dashboards e BI<br/>
+          • Suporte e manutenção evolutiva
+        </p>
+        <span class="badge">Atendimento B2B</span>
+      </div>
+
+      <div class="card">
+        <h3>Conformidade e transparência</h3>
+        <p>
+          Mantemos Política de Privacidade e Termos de Uso públicos para informar como dados podem ser tratados
+          em comunicações e processos de atendimento.
+        </p>
+        <span class="badge">LGPD • Boas práticas</span>
+      </div>
+
+      <div class="card">
+        <h3>Atendimento</h3>
+        <p>
+          Atendimento comercial e suporte técnico por canais digitais.
+          Respostas em horário comercial (ou conforme contrato).
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Contato</h3>
+        <p>
+          E-mail: <strong>contato@suaempresa.com</strong><br/>
+          WhatsApp: <strong>(00) 00000-0000</strong><br/>
+          Cidade/UF: <strong>Sua Cidade - UF</strong>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div><strong>SUA EMPRESA</strong> — Consultoria e Desenvolvimento de Sistemas</div>
+      <div>
+        Links: <a href="privacidade.html">Política de Privacidade</a> • <a href="termos.html">Termos de Uso</a> • <a href="contato.html">Contato</a>
+      </div>
+      <div style="margin-top:8px;">
+        © <span id="y"></span> Sua Empresa. Todos os direitos reservados.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
